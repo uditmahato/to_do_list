@@ -1,10 +1,9 @@
 {% extends 'base/main.html' %}
 {% block content %}
 
-<div class="header-bar">
-    <h1>Register</h1>
+<div class="header-bar" style="border-radius: 5px 5px 0 0;">
+    <h1 style="margin:auto;">Register</h1>
 </div>
-
 <div class="card-body">
     <form method="POST">
         {% csrf_token %}
@@ -18,7 +17,7 @@
         {{form.password2}}
         <input style="margin-top:10px ;" class="button" type="submit" value="Register">
     </form>
-    <p>Already have an account? <a href="{% url 'login' %}">Login</a></p>
+    <p>If you already have an account? <a href="{% url 'login' %}">Login</a></p>
 </div>
 
 
