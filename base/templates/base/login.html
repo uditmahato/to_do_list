@@ -1,8 +1,11 @@
 {% extends 'base/main.html' %}
 {% block content %}
-<p>Hi,Welcome to our TO-DO app</p>
+<div class="Header">
+    <h1 top-header>SSRC To-Do App</h1>
+    <p top-para>Hi Club Members,<br> Welcome to our TO-DO app</p>
+</div>
 <div class="header-bar">
-    <h1>Login</h1>
+    <h1 class="main-page">Login your Account, If registered</h1>
 </div>
 <div class="card-body">
     <form method="POST">
@@ -10,6 +13,6 @@
         {{form.as_p}}
         <input class="button" type="submit" value="Login">
     </form>
-    <p>Don't have an account? <a href="{% url 'register' %}">Register</a></p>
+    <p class="main-page">If you don't have an account? <a href="{% url 'register' %}">Register</a></p>
 </div>
 {% endblock content %} 
